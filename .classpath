@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="G:/ExternalLibraries/fontawesomefx-8.9.jar"/>
+	<classpathentry kind="lib" path="G:/ExternalLibraries/fontawesomefx-commons-8.15.jar"/>
+	<classpathentry kind="lib" path="G:/ExternalLibraries/fontawesomefx-fontawesome-4.7.0-5.jar"/>
+	<classpathentry kind="lib" path="G:/ExternalLibraries/jackson-annotations-2.9.4.jar"/>
+	<classpathentry kind="lib" path="G:/ExternalLibraries/jackson-core-2.9.4.jar"/>
+	<classpathentry kind="lib" path="G:/ExternalLibraries/jackson-databind-2.9.4.jar"/>
+	<classpathentry kind="lib" path="G:/ExternalLibraries/jackson-datatype-joda-2.4.5.jar"/>
+	<classpathentry kind="lib" path="G:/ExternalLibraries/jBCrypt-0.4.1.jar"/>
+	<classpathentry kind="lib" path="G:/ExternalLibraries/jfoenix-8.0.7.jar"/>
+	<classpathentry kind="lib" path="G:/ExternalLibraries/joda-time-2.2.jar"/>
+	<classpathentry kind="lib" path="G:/ExternalLibraries/mail-1.5.0-b01.jar"/>
+	<classpathentry kind="lib" path="G:/ExternalLibraries/mongo-java-driver-3.6.3.jar"/>
+	<classpathentry kind="lib" path="G:/ExternalLibraries/mysql-connector-java-5.1.44/mysql-connector-java-5.1.44-bin.jar"/>
+	<classpathentry kind="output" path="out/production/InvoiceManager"/>
+</classpath>
