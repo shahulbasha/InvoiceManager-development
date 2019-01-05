@@ -11,10 +11,8 @@ import com.invoice.view.DatabaseEntryView;
  */
 public class RegexPatternMatch {
 
-    private DatabaseEntryView credentials;
 
     public boolean isValidCredentials(DatabaseEntryView credentials, String userName, String email, String phoneNumber) {
-        this.credentials = credentials;
         boolean verify = false;
         String usernameRegex = "[_A-Za-z{1,12}_0-9]+";
         String emailRegex = "[A-Za-z0-9._%-]+@[A-Za-z0-9._-]+\\.[A-Za-z]{2,4}";

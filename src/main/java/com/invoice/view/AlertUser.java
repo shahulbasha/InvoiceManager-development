@@ -1,11 +1,13 @@
 package com.invoice.view;
 
-import com.invoice.application.Driver;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXDialog;
 import com.jfoenix.controls.JFXDialogLayout;
+import com.jfoenix.controls.JFXProgressBar;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.ProgressIndicator;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
@@ -13,9 +15,15 @@ import javafx.stage.Stage;
  *Date: 01-02-19
  * Reusable class to alert/popup information to the user
  */
-public class ValidateCredentials {
-    private Driver driver = new Driver();
-    private DefaultActivityView activityView = new DefaultActivityView();
+public class AlertUser {
+
+    private JFXProgressBar bar;
+    private ProgressIndicator indicator;
+
+    public AlertUser(JFXProgressBar bar, ProgressIndicator indicator) {
+        this.bar = bar;
+        this.indicator = indicator;
+    }
 
     public Scene popupDialog(Stage stage, Scene mainView, String title, String message) {
 
@@ -23,6 +31,7 @@ public class ValidateCredentials {
         stackpane.setStyle("-fx-background-color:#202a34");
         Scene scene = new Scene(stackpane, 600, 400);
         scene.getStylesheets().add(this.getClass().getResource("application.css").toExternalForm());
+        HBox box = new HBox(20);
         Label support = new Label(message);
         support.setTranslateX(80);
         JFXDialogLayout content = new JFXDialogLayout();
@@ -30,11 +39,16 @@ public class ValidateCredentials {
         header.setTranslateX(170);
         content.setHeading(header);
         content.setPrefSize(500, 250);
-        content.setBody(support);
+        bar.setTranslateY(75);
+        bar.setTranslateX(75);
+        indicator.setTranslateY(90);
+        indicator.setTranslateX(300);
+
+        content.setBody(support, bar, indicator);
         content.setStyle("-fx-background-color:#202a34;");
         JFXDialog dialog = new JFXDialog(stackpane, content, JFXDialog.DialogTransition.BOTTOM, false);
 
-        JFXButton close = new JFXButton("Close");
+        JFXButton close = new JFXButton("Dismiss");
 
 
         close.setOnAction(event -> {

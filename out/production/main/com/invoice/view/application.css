@@ -97,4 +97,25 @@ HBox{
 .StackPane{
 -fx-background-color:"#202A34";
 }
+.jfx-progress-bar > .track{
+-fx-background-color:"red";
+
+}
+.jfx-progress-bar{
+-fx-padding: 10px;
+
+}
+.jfx-progress-bar > .bar{
+-fx-background-color:"green";
+}
+.jfx-progress-bar > .track,
+.jfx-progress-bar > .bar{
+
+
+
+-fx-background-radius: 0;
+-fx-background-insets: 0;
+}
+
+
 

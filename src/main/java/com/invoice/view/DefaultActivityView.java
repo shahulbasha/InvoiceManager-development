@@ -1,6 +1,5 @@
 package com.invoice.view;
 
-import com.invoice.application.Driver;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -15,7 +14,6 @@ public class DefaultActivityView {
 
     private JFXButton showReports = new JFXButton("New Report");
     private JFXButton createEntry = new JFXButton("New Entry");
-    private Driver driver = new Driver();
 
     public Parent createContent() {
         Label welcomeUser = new Label("Welcome To Invoice Management");

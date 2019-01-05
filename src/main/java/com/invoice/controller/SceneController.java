@@ -1,11 +1,14 @@
 package com.invoice.controller;
 
 import com.invoice.application.Driver;
+import com.invoice.utilities.BackgroundTask;
 import com.invoice.utilities.RegexPatternMatch;
+import com.invoice.view.AlertUser;
 import com.invoice.view.DatabaseEntryView;
 import com.invoice.view.DefaultActivityView;
 import com.invoice.view.ReportActivityView;
-import com.invoice.view.ValidateCredentials;
+import com.jfoenix.controls.JFXProgressBar;
+import javafx.scene.control.ProgressIndicator;
 import javafx.scene.paint.Color;
 
 
@@ -16,7 +19,15 @@ public class SceneController {
     private Driver Applicationdriver;
     private DefaultActivityView mainScene;
     private RegexPatternMatch pattern;
-    private ValidateCredentials popup = new ValidateCredentials();
+    private JFXProgressBar reportProgressBar = new JFXProgressBar();
+    private ProgressIndicator progressIndicator = new ProgressIndicator();
+    private JFXProgressBar entryProgressBar = new JFXProgressBar();
+    private ProgressIndicator entryProgressIndicator = new ProgressIndicator();
+    private AlertUser alertUser = new AlertUser(reportProgressBar, progressIndicator);
+
+    private AlertUser displayDialog = new AlertUser(entryProgressBar, entryProgressIndicator);
+    private BackgroundTask fetchReportTask;
+    private BackgroundTask submitEntryTask;
 
 
     public SceneController(ReportActivityView report, DatabaseEntryView validateCustomerData, Driver applicationDriver, DefaultActivityView defaultActivityView, RegexPatternMatch pattern) {
@@ -25,17 +36,18 @@ public class SceneController {
         this.Applicationdriver = applicationDriver;
         this.mainScene = defaultActivityView;
         this.pattern = pattern;
-
+        this.fetchReportTask = new BackgroundTask(reportProgressBar, progressIndicator, applicationDriver, defaultActivityView);
+        this.submitEntryTask = new BackgroundTask(entryProgressBar, entryProgressIndicator, applicationDriver, defaultActivityView);
         validateCustomerData.entryHandler(Event -> {
-            Boolean verify = true;
+            //runs background task  when the customer creates a new entry.
+            submitCustomerEntryTask();
             /*
              *when the submit button is click we verify the user data before persisting to the db
-             * if valid the textfield unfocused color will change to green and vice versa it will change to red if not valid .
+             * if valid the text field unfocused color will change to green and vice versa it will change to red if not valid .
              * if all credentials are valid the popupDialog method invokes a alert to the user.
              */
-
             if (pattern.isValidCredentials(validateCustomerData, validateCustomerData.getCustomerName(), validateCustomerData.customerEmail(), validateCustomerData.customerPhone())) {
-                applicationDriver.getStage().setScene(popup.popupDialog(applicationDriver.getStage(), applicationDriver.switchScene(validateCustomerData.displayEntryView()), "Compose Report", "request was successful composing report."));
+                applicationDriver.getStage().setScene(displayDialog.popupDialog(applicationDriver.getStage(), applicationDriver.switchScene(validateCustomerData.displayEntryView()), "Compose Report", "request was successful composing report."));
                 validateCustomerData.getbutton().setText("Entry SuccessFul");
                 validateCustomerData.getbutton().setStyle("-fx-background-color:green;-fx-text-fill:white;");
                 validateCustomerData.changeValidationColors(Color.GREEN);
@@ -51,18 +63,27 @@ public class SceneController {
         });
 
         defaultActivityView.reportHandler(changeView -> {
-
-
+            /*
+             *scene change
+             */
             applicationDriver.getStage().setScene(applicationDriver.switchScene(report.createReportContent()));
             applicationDriver.getStage().getScene().getStylesheets().add(this.getClass().getResource("application.css").toExternalForm());
             applicationDriver.getStage().show();
         });
+
         defaultActivityView.entryHandler(changeView -> {
+            /*
+             *scene change
+             */
             applicationDriver.getStage().setScene(applicationDriver.switchScene(validateCustomerData.displayEntryView()));
             applicationDriver.getStage().getScene().getStylesheets().add(this.getClass().getResource("application.css").toExternalForm());
             applicationDriver.getStage().show();
         });
+
         validateCustomerData.homeHandler(goHome -> {
+            /*
+             *scene change
+             */
             applicationDriver.getStage().setScene(applicationDriver.switchScene(defaultActivityView.createContent()));
             applicationDriver.getStage().getScene().getStylesheets().add(this.getClass().getResource("application.css").toExternalForm());
             applicationDriver.getStage().show();
@@ -72,16 +93,50 @@ public class SceneController {
             applicationDriver.getStage().getScene().getStylesheets().add(this.getClass().getResource("application.css").toExternalForm());
             applicationDriver.getStage().show();
         });
+
+
         report.ClickEvent(retrieveReport -> {
-            applicationDriver.getStage().setScene(popup.popupDialog(applicationDriver.getStage(),
-                    applicationDriver.switchScene(mainScene.createContent()), "Fetch Request", "request was successful fetching invoice\nfrom database."));
+            /*
+             * implement database validation to generate a jasper report
+             * -> for now it runs a background task when the user clicks the
+             * fetch invoice button and updates progress bar based on the task
+             */
+            FetchCustomerReportTask();
+            applicationDriver.getStage().setScene(alertUser.popupDialog(applicationDriver.getStage(),
+                    applicationDriver.switchScene(defaultActivityView.createContent()), "Task Status", "Downloading files to directory."));
+
 
         });
+
+    }
+
+    private void FetchCustomerReportTask() {
+        /*
+         background task for when the report fetch invoice button is clicked
+         */
+        Thread reportCustomerTask = new Thread(fetchReportTask);
+        reportCustomerTask.setDaemon(true);
+        reportCustomerTask.start();
+        reportProgressBar.setPrefSize(220, 30);
+        reportProgressBar.progressProperty().bind(fetchReportTask.progressProperty());
+        progressIndicator.setStyle("-fx-progress-color:green;");
     }
 
 
-}
+    private void submitCustomerEntryTask() {
+        /*
+         background task for when the submit entry button is clicked
+         */
+        Thread entryBackgroundTask = new Thread(submitEntryTask);
+        entryBackgroundTask.setDaemon(true);
+        entryBackgroundTask.start();
+        entryProgressBar.setPrefSize(220, 30);
+        entryProgressIndicator.setStyle("-fx-progress-color:green;");
+        entryProgressBar.progressProperty().bind(submitEntryTask.progressProperty());
 
+
+    }
+}
 
 
 

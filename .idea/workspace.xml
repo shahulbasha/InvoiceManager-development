@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce9dfbbd-63dc-4219-9708-f9f7789f981e" name="Default" comment="" />
+    <list default="true" id="ce9dfbbd-63dc-4219-9708-f9f7789f981e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/invoice/utilities/BackgroundTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/Test/RegexPatternMatchTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/com/invoice/application/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/com/invoice/application/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/com/invoice/controller/SceneController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/com/invoice/controller/SceneController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/com/invoice/controller/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/com/invoice/controller/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/com/invoice/persistence/DatabaseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/com/invoice/persistence/DatabaseHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/com/invoice/utilities/Cryptography.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/com/invoice/utilities/Data1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/com/invoice/utilities/PropertiesHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/com/invoice/utilities/PropertiesHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/com/invoice/view/DatabaseEntryView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/com/invoice/view/DatabaseEntryView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/com/invoice/view/DefaultActivityView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/com/invoice/view/DefaultActivityView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/com/invoice/view/ReportActivityView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/com/invoice/view/ReportActivityView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/com/invoice/view/ValidateCredentials.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/com/invoice/view/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/com/invoice/view/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Test/RegexPatternMatchTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/invoice/application/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/invoice/application/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/invoice/controller/SceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/invoice/controller/SceneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/invoice/controller/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/invoice/controller/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/invoice/utilities/Cryptography.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/invoice/utilities/Data1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/invoice/utilities/RegexPatternMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/invoice/utilities/RegexPatternMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/invoice/view/DefaultActivityView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/invoice/view/DefaultActivityView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/invoice/view/ReportActivityView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/invoice/view/ReportActivityView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/invoice/view/ValidateCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/invoice/view/AlertUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/invoice/view/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/invoice/view/application.css" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,70 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DefaultActivityView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/view/DefaultActivityView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnimateTransition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/animations/AnimateTransition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SceneController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/controller/SceneController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1587">
-              <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValidateCredentials.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/view/ValidateCredentials.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReportActivityView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/view/ReportActivityView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="83" selection-start-line="83" selection-end-line="83" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Driver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/application/Driver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1514#1515#0" expanded="true" />
-                <element signature="e#1564#1565#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatabaseEntryView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/view/DatabaseEntryView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+            <state relative-caret-position="-241">
+              <caret line="36" column="57" lean-forward="true" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,19 +73,22 @@
         <option value="$PROJECT_DIR$/src/main/java/Test/ReportActivityViewTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Test/RegexPatternMatchTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Test/TestMe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/invoice/utilities/RegexPatternMatch.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/invoice/utilities/Cryptography.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/invoice/utilities/BasicCrypto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/invoice/application/application.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/invoice/controller/application.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/invoice/view/DatabaseEntryView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/invoice/view/ValidateCredentials.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/invoice/view/application.css" />
-        <option value="$PROJECT_DIR$/src/main/java/com/invoice/application/Driver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/invoice/controller/SceneController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/invoice/view/ReportActivityView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/invoice/view/DefaultActivityView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/invoice/animations/AnimateTransition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/invoice/view/ValidateCredentials.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/invoice/view/ReportActivityView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/invoice/application/NumberProp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/invoice/controller/application.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/invoice/view/application.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/invoice/utilities/BackgroundTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/invoice/view/AlertUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/invoice/controller/SceneController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/invoice/view/DefaultActivityView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/invoice/application/Driver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/invoice/utilities/RegexPatternMatch.java" />
       </list>
     </option>
   </component>
@@ -131,9 +103,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -168,12 +139,19 @@
               <item name="InvoiceManager-development" type="b2602c69:ProjectViewProjectNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InvoiceManager-development" type="b2602c69:ProjectViewProjectNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -189,6 +167,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -199,15 +178,16 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="Test" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/com/invoice/controller" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/invoice/application" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/invoice/utilities" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/invoice/utilities" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/invoice/controller" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/invoice/application" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -431,22 +411,23 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="1443" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49791667" weight="0.32828283" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.496875" weight="0.3272727" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50416666" side_tool="true" visible="true" weight="0.26969698" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5052083" side_tool="true" weight="0.26877472" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49583334" visible="true" weight="0.26969698" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49479166" weight="0.32222223" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1875" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29583332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -460,6 +441,34 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49947917" weight="0.32929292" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49947917" weight="0.32929292" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49479166" visible="true" weight="0.26877472" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.140625" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5052083" side_tool="true" visible="true" weight="0.26877472" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.496875" weight="0.32806325" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
@@ -480,7 +489,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/invoice/application/Driver.java</url>
-          <line>18</line>
+          <line>20</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -495,44 +504,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/utilities/Cryptography.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/utilities/BasicCrypto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/javafx.base/javafx/beans/InvalidationListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/controller/SceneController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="37" column="85" selection-start-line="37" selection-start-column="85" selection-end-line="37" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/view/DatabaseEntryView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1771">
-          <caret line="89" column="28" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/view/DefaultActivityView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
@@ -544,11 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1514#1515#0" expanded="true" />
-            <element signature="e#1564#1565#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -559,13 +525,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/utilities/Cryptography.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/utilities/Cryptography.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/view/DatabaseEntryView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1771">
@@ -633,11 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1514#1515#0" expanded="true" />
-            <element signature="e#1564#1565#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -652,11 +607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1514#1515#0" expanded="true" />
-            <element signature="e#1564#1565#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -705,13 +655,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Test/reportActivityTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Test/ReportActivityViewTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Test/TestMe.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Test/RegexPatternMatchTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/javafx.base/javafx/event/EventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -719,38 +662,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/utilities/RegexPatternMatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/utilities/Data1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/javafx.base/javafx/beans/InvalidationListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="874">
           <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/utilities/BasicCrypto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/utilities/Cryptography.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -768,20 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/controller/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="14" lean-forward="true" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/view/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1449">
-          <caret line="63" column="29" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/lib/src.zip!/javafx.graphics/javafx/scene/Scene.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
@@ -792,37 +693,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/application/Driver.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/utilities/Data1.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/utilities/Cryptography.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/application/NumberProp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="552">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1514#1515#0" expanded="true" />
-            <element signature="e#1564#1565#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/view/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="100" column="25" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/controller/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1397">
+          <caret line="92" column="25" lean-forward="true" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/view/ReportActivityView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="580">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/view/ValidateCredentials.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/utilities/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/view/DefaultActivityView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="55" />
-        </state>
+        <state relative-caret-position="-1422" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/animations/AnimateTransition.java">
@@ -832,10 +740,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/application/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/utilities/RegexPatternMatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Test/RegexPatternMatchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/persistence/DatabaseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/view/DatabaseEntryView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+        <state relative-caret-position="1432">
+          <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/persistence/CustomerInfoPersistDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/utilities/BasicCrypto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/view/AlertUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/view/DefaultActivityView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/utilities/BackgroundTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -844,8 +823,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/invoice/controller/SceneController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1587">
-          <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+        <state relative-caret-position="-241">
+          <caret line="36" column="57" lean-forward="true" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

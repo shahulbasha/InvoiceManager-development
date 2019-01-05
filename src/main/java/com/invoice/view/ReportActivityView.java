@@ -30,12 +30,11 @@ public class ReportActivityView {
     private JFXTextField fetchInvoice;
     private JFXButton fetchFromDB = new JFXButton("Fetch Invoice");
     private JFXButton home = new JFXButton("home");
-
     public Parent createReportContent() {
         BorderPane pane = new BorderPane();
 
         VBox root = new VBox(30);
-        HBox hbox = new HBox(20, fetchFromDB, home);
+        HBox hbox = new HBox(30, fetchFromDB, home);
 
         hbox.setAlignment(Pos.CENTER);
         datepicker = new JFXDatePicker();
@@ -47,6 +46,7 @@ public class ReportActivityView {
         root.setPrefSize(600, 400);
         root.setPadding(new Insets(25));
         root.setAlignment(Pos.TOP_CENTER);
+
         root.getChildren().addAll(new Label("To view your invoice please select a date below and \n\tprovide an invoice number to continue."), datepicker, fetchInvoice, hbox);
         pane.setCenter(root);
         return pane;
@@ -69,7 +69,6 @@ public class ReportActivityView {
         return fetchInvoice.getText();
 
     }
-
 
     public void ClickEvent(EventHandler<ActionEvent> eventhandler) {
         //on click need to navigate back to home screen . the report will be fetched and displayed separately
