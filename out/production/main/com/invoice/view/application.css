@@ -41,8 +41,9 @@ ImageView{
 
 .jfx-button{
 	-fx-background-radius:50;
-	-fx-background-color:"#fffd8c";
-	-fx-text-fill:"#202a34";
+	-fx-background-color:"transparent";
+	-fx-border-color:"#fffd8c";
+	-fx-text-fill:"white";
 
 	-fx-border-radius:50;
 	 -jfx-button-type:RAISED;

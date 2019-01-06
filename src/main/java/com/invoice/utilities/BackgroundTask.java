@@ -2,8 +2,8 @@ package com.invoice.utilities;
 
 import com.invoice.application.Driver;
 import com.invoice.view.AlertUser;
+import com.invoice.view.DatabaseEntryView;
 import com.invoice.view.DefaultActivityView;
-import com.invoice.view.ReportActivityView;
 import com.jfoenix.controls.JFXProgressBar;
 import javafx.concurrent.Task;
 import javafx.scene.control.ProgressIndicator;
@@ -19,7 +19,7 @@ public class BackgroundTask extends Task<Double> {
     private ProgressIndicator indicator;
     private Driver applicationDriver;
     private DefaultActivityView activityView;
-    private ReportActivityView view;
+
 
 
     public BackgroundTask(JFXProgressBar bar, ProgressIndicator indicator, Driver applicationDriver, DefaultActivityView activityView) {
@@ -36,6 +36,9 @@ public class BackgroundTask extends Task<Double> {
         for (i = 0; i < 1000; i++) {
             updateProgress(i, 1000);
             Thread.sleep(10);
+            if (isCancelled()) {
+                return i;
+            }
         }
         return i;
     }
@@ -45,18 +48,34 @@ public class BackgroundTask extends Task<Double> {
         System.out.println("fail");
     }
 
+
+    @Override
+    protected void updateProgress(long workDone, long max) {
+        updateMessage("Task complete.");
+        super.updateProgress(workDone, max);
+    }
+
     @Override
     protected void succeeded() {
-
+        DatabaseEntryView et = new DatabaseEntryView();
         System.out.println("complete");
-        AlertUser popup = new AlertUser(bar, indicator);
+
+        AlertUser popup = new AlertUser();
         indicator.progressProperty().bind(bar.progressProperty());
-        applicationDriver.getStage().setScene(popup.popupDialog(applicationDriver.getStage(), applicationDriver.switchScene(activityView.createContent()), "Task Completed", "Files downloaded to directory."));
+        applicationDriver.getStage().setScene(popup.ShowRecords(applicationDriver.getStage(), applicationDriver.switchScene(activityView.createContent()), "Task Completed", "Files successfully downloaded to directory."));
         applicationDriver.getStage().getScene().getStylesheets().add(this.getClass().getResource("application.css").toExternalForm());
         applicationDriver.getStage().show();
+        bar.progressProperty().unbind();
+        indicator.progressProperty().unbind();
 
     }
 
 
+    public boolean cancel(boolean mayInterruptedIfRunning) {
+        updateMessage("task failed");
+        System.out.println("cancelled");
+        bar.progressProperty().bind(progressProperty());
+        return super.cancel(mayInterruptedIfRunning);
+    }
 }
 

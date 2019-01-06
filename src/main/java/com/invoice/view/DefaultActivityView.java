@@ -10,10 +10,12 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 
+
 public class DefaultActivityView {
 
     private JFXButton showReports = new JFXButton("New Report");
     private JFXButton createEntry = new JFXButton("New Entry");
+    private JFXButton records = new JFXButton("Records");
 
     public Parent createContent() {
         Label welcomeUser = new Label("Welcome To Invoice Management");
@@ -23,7 +25,7 @@ public class DefaultActivityView {
         HBox hbox = new HBox(10);
         hbox.setAlignment(Pos.CENTER);
         hbox.setPadding(new Insets(50));
-        hbox.getChildren().addAll(showReports, createEntry);
+        hbox.getChildren().addAll(showReports, createEntry, records);
         BorderPane borderpane = new BorderPane();
 
 
@@ -42,12 +44,20 @@ public class DefaultActivityView {
     public void reportHandler(EventHandler<ActionEvent> eventHandler) {
         showReports.setOnAction(eventHandler);
 
+
     }
 
     public void entryHandler(EventHandler<ActionEvent> eventHandler) {
         createEntry.setOnAction(eventHandler);
 
     }
+
+    public void recordHandler(EventHandler<ActionEvent> eventHandler) {
+        records.setOnAction(eventHandler);
+
+    }
+
+
 
 
 }

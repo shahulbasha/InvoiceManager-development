@@ -6,6 +6,7 @@ public class CustomerModel {
     private int uniqueId;
     private String email;
 
+
     public String getName() {
         return name;
     }

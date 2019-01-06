@@ -19,14 +19,19 @@ public class AlertUser {
 
     private JFXProgressBar bar;
     private ProgressIndicator indicator;
+    private String message;
 
     public AlertUser(JFXProgressBar bar, ProgressIndicator indicator) {
         this.bar = bar;
         this.indicator = indicator;
     }
 
-    public Scene popupDialog(Stage stage, Scene mainView, String title, String message) {
+    public AlertUser() {
 
+    }
+
+    // returns a alert with the progress bar and indicator
+    public Scene popupDialog(Stage stage, Scene mainView, String title, String message) {
         StackPane stackpane = new StackPane();
         stackpane.setStyle("-fx-background-color:#202a34");
         Scene scene = new Scene(stackpane, 600, 400);
@@ -50,6 +55,37 @@ public class AlertUser {
 
         JFXButton close = new JFXButton("Dismiss");
 
+
+        close.setOnAction(event -> {
+            dialog.close();
+            mainView.getStylesheets().add(this.getClass().getResource("application.css").toExternalForm());
+            stage.setScene(mainView);
+        });
+        content.setActions(close);
+        dialog.show();
+        return scene;
+    }
+
+    //returns an alert with just a title and message 
+    public Scene ShowRecords(Stage stage, Scene mainView, String title, String message) {
+        StackPane stackpane = new StackPane();
+        stackpane.setStyle("-fx-background-color:#202a34");
+        Scene scene = new Scene(stackpane, 600, 400);
+        scene.getStylesheets().add(this.getClass().getResource("application.css").toExternalForm());
+        HBox box = new HBox(20);
+        Label support = new Label(message);
+        support.setTranslateX(20);
+        support.setTranslateY(10);
+        JFXDialogLayout content = new JFXDialogLayout();
+        Label header = new Label(title);
+        header.setTranslateX(150);
+        header.setTranslateY(-70);
+        content.setHeading(header);
+        content.setPrefSize(500, 250);
+        content.setBody(header, support);
+        content.setStyle("-fx-background-color:#202a34;");
+        JFXDialog dialog = new JFXDialog(stackpane, content, JFXDialog.DialogTransition.BOTTOM, false);
+        JFXButton close = new JFXButton("Dismiss");
 
         close.setOnAction(event -> {
             dialog.close();

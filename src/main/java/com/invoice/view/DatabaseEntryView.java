@@ -62,6 +62,7 @@ public class DatabaseEntryView {
 
     public String getCustomerName() {
         return customerName.getText();
+
     }
 
     public String customerEmail() {
@@ -143,6 +144,12 @@ public class DatabaseEntryView {
         //If you receive response 1 from that method show successfully saved dialog
         //try to simulate the DB response if you face some issue
         home.setOnAction(eventHandler);
+
+    }
+
+    public void print() {
+        System.out.println(customerId() + "\n" + getCustomerName() + "\n" + customerEmail() + "\n" + customerPhone());
+
 
     }
 }

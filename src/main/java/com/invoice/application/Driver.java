@@ -8,13 +8,14 @@ import com.invoice.view.ReportActivityView;
 import javafx.application.Application;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 public class Driver extends Application {
 
     private Stage stage = new Stage();
-
+    Scene defaultView;
     public static void main(String[] args) {
         launch(args);
     }
@@ -26,15 +27,18 @@ public class Driver extends Application {
         ReportActivityView reportActivityView = new ReportActivityView();
         DatabaseEntryView entryView = new DatabaseEntryView();
         RegexPatternMatch pattern = new RegexPatternMatch();
-
         SceneController controller = new SceneController(reportActivityView, entryView, this, mainActivity, pattern);
 
         stage.setTitle("Invoice Management");
         stage.setResizable(false);
         stage.initStyle(StageStyle.UTILITY);
-        Scene defaultView = new Scene(mainActivity.createContent(), 600, 400);
-        defaultView.getStylesheets().add(this.getClass().getResource("application.css").toExternalForm());
+        stage.setResizable(false);
+        defaultView = new Scene(mainActivity.createContent(), 600, 400);
+        defaultView.setFill(Color.valueOf("#202a34"));
 
+
+
+        defaultView.getStylesheets().add(this.getClass().getResource("application.css").toExternalForm());
         stage.setScene(defaultView);
         stage.show();
 
@@ -56,5 +60,6 @@ public class Driver extends Application {
         return stage.getScene();
 
     }
+
 
 }

@@ -1,6 +1,10 @@
 package com.invoice.animations;
 
 import javafx.scene.Parent;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+
+
 
 /*
  *Author: Shavar Litchmore
@@ -11,6 +15,20 @@ import javafx.scene.Parent;
  *
  */
 public class AnimateTransition extends Parent {
+    private int w;
+    private int h;
+    private Rectangle bg;
+
+    public AnimateTransition(int w, int h) {
+        this.w = w;
+        this.h = h;
+        bg = new Rectangle(w, h, Color.color(0.2, 0.2, 0.2, 0.75));
+
+        getChildren().add(bg);
+    }
+
+    public void animate() {
 
 
+    }
 }

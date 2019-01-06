@@ -23,8 +23,8 @@ public class SceneController {
     private ProgressIndicator progressIndicator = new ProgressIndicator();
     private JFXProgressBar entryProgressBar = new JFXProgressBar();
     private ProgressIndicator entryProgressIndicator = new ProgressIndicator();
+    AlertUser user = new AlertUser();
     private AlertUser alertUser = new AlertUser(reportProgressBar, progressIndicator);
-
     private AlertUser displayDialog = new AlertUser(entryProgressBar, entryProgressIndicator);
     private BackgroundTask fetchReportTask;
     private BackgroundTask submitEntryTask;
@@ -46,21 +46,24 @@ public class SceneController {
              * if valid the text field unfocused color will change to green and vice versa it will change to red if not valid .
              * if all credentials are valid the popupDialog method invokes a alert to the user.
              */
-            if (pattern.isValidCredentials(validateCustomerData, validateCustomerData.getCustomerName(), validateCustomerData.customerEmail(), validateCustomerData.customerPhone())) {
-                applicationDriver.getStage().setScene(displayDialog.popupDialog(applicationDriver.getStage(), applicationDriver.switchScene(validateCustomerData.displayEntryView()), "Compose Report", "request was successful composing report."));
-                validateCustomerData.getbutton().setText("Entry SuccessFul");
-                validateCustomerData.getbutton().setStyle("-fx-background-color:green;-fx-text-fill:white;");
-                validateCustomerData.changeValidationColors(Color.GREEN);
+                    validateCustomerData.print();
+                    if (pattern.isValidCredentials(validateCustomerData, validateCustomerData.getCustomerName(), validateCustomerData.customerEmail(), validateCustomerData.customerPhone())) {
+                        applicationDriver.getStage().setScene(displayDialog.popupDialog(applicationDriver.getStage(), applicationDriver.switchScene(validateCustomerData.displayEntryView()), "Compose Report", "request was successful composing report."));
+                        validateCustomerData.getbutton().setText("Entry SuccessFul");
+                        validateCustomerData.getbutton().setStyle("-fx-background-color:green;-fx-text-fill:white;");
+                        validateCustomerData.changeValidationColors(Color.GREEN);
 
-            } else {
-                validateCustomerData.changeValidationColors(Color.RED);
-                validateCustomerData.validateTextFields();
-                validateCustomerData.getbutton().setText("Entry Unsuccessful");
-                validateCustomerData.getbutton().setStyle("-fx-background-color:red;-fx-text-fill:black;");
-            }
+                    } else {
+                        validateCustomerData.changeValidationColors(Color.RED);
+                        validateCustomerData.validateTextFields();
+                        validateCustomerData.getbutton().setText("Entry Unsuccessful");
+                        validateCustomerData.getbutton().setStyle("-fx-background-color:red;-fx-text-fill:black;");
+                    }
 
 
-        });
+                }
+
+        );
 
         defaultActivityView.reportHandler(changeView -> {
             /*
@@ -69,7 +72,17 @@ public class SceneController {
             applicationDriver.getStage().setScene(applicationDriver.switchScene(report.createReportContent()));
             applicationDriver.getStage().getScene().getStylesheets().add(this.getClass().getResource("application.css").toExternalForm());
             applicationDriver.getStage().show();
+
+
         });
+
+
+        defaultActivityView.recordHandler(showRecords -> {
+            applicationDriver.getStage().setScene(user.ShowRecords(applicationDriver.getStage(),
+                    applicationDriver.switchScene(defaultActivityView.createContent()), "Records File System", "All records are stored in our database and cannot be accessed here " +
+                            "feature coming soon."));
+        });
+
 
         defaultActivityView.entryHandler(changeView -> {
             /*
@@ -119,7 +132,7 @@ public class SceneController {
         reportCustomerTask.start();
         reportProgressBar.setPrefSize(220, 30);
         reportProgressBar.progressProperty().bind(fetchReportTask.progressProperty());
-        progressIndicator.setStyle("-fx-progress-color:green;");
+
     }
 
 
@@ -131,7 +144,7 @@ public class SceneController {
         entryBackgroundTask.setDaemon(true);
         entryBackgroundTask.start();
         entryProgressBar.setPrefSize(220, 30);
-        entryProgressIndicator.setStyle("-fx-progress-color:green;");
+
         entryProgressBar.progressProperty().bind(submitEntryTask.progressProperty());
 
 
